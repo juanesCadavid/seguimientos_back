@@ -1,4 +1,3 @@
-"use strict";
 // export default{
 //     database: {
 //         host: process.env.DATABASEHOST || '147.182.179.68',
@@ -7,12 +6,13 @@
 //         database: process.env.DATABASE_NAME || 'bd_seguimientosprocex'
 //     }
 // }
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = {
+
+
+export default{
     database: {
         host: 'localhost',
         user: 'root',
         password: 'socrates',
         database: 'xxxxxxx'
     }
-};
+} 

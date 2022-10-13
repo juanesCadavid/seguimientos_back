@@ -285,5 +285,18 @@ class Registro {
             }
         });
     }
+    static buscarUsuario(ID_REGISTRO) {
+        return new Promise(function (resolev, reject) {
+            try {
+                database_1.default.query("select * from registro where ID_REGISTRO = ?", ID_REGISTRO, function (err, result, fields) {
+                    if (err)
+                        throw err;
+                    resolev(result);
+                });
+            }
+            catch (error) {
+            }
+        });
+    }
 }
 exports.default = Registro;
